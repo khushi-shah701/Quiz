@@ -1,0 +1,64 @@
+/* Set basic styles for the whole page */
+body {
+  font-family: Arial, sans-serif;          /* Clean, readable font */
+  background: #f0f2f5;                     /* Light gray background */
+  display: flex;                           /* Center the content */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;                           /* Full screen height */
+  margin: 0;
+}
+
+/* Container that holds the entire quiz */
+.quiz-container {
+  background: white;                       /* White card background */
+  padding: 30px;
+  border-radius: 10px;                     /* Rounded corners */
+  width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+  text-align: center;                      /* Centered text inside */
+}
+
+/* Container for answer buttons */
+.btn-container {
+  margin-top: 20px;                        /* Space above answer buttons */
+}
+
+/* Style for all buttons (answer and next) */
+button {
+  margin: 10px;                            /* Space between buttons */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;                      /* Slightly rounded buttons */
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+  opacity: 0.9;                            /* Slight fade on hover */
+}
+
+/* Correct answer button - green background */
+.correct {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Wrong answer button - red background */
+.wrong {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Utility class to hide elements (e.g., score container) */
+.hide {
+  display: none;
+}
+
+/* Specific style for the Next button */
+#next-btn {
+  background-color: #007bff;              /* Blue background */
+  color: white;
+}
